@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* SMJ Brand Colors - Gold & Burgundy Theme */
+    --background: 45 15% 97%;
+    --foreground: 0 15% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 15% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 15% 15%;
+
+    /* Primary: Rich Burgundy from logo */
+    --primary: 0 45% 35%;
+    --primary-foreground: 45 50% 95%;
+
+    /* Secondary: Warm Gold from logo */
+    --secondary: 45 85% 70%;
+    --secondary-foreground: 0 45% 35%;
+
+    /* Muted: Soft cream tones */
+    --muted: 45 25% 92%;
+    --muted-foreground: 0 15% 45%;
+
+    /* Accent: Bright gold highlight */
+    --accent: 45 90% 60%;
+    --accent-foreground: 0 45% 35%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 45 15% 87%;
+    --input: 45 15% 87%;
+    --ring: 0 45% 35%;
+
+    --radius: 0.75rem;
+
+    /* Custom SMJ Variables */
+    --gradient-gold: linear-gradient(135deg, hsl(45, 90%, 70%), hsl(45, 85%, 60%));
+    --gradient-burgundy: linear-gradient(135deg, hsl(0, 45%, 35%), hsl(0, 50%, 25%));
+    --shadow-gold: 0 4px 20px hsl(45, 85%, 70% / 0.3);
+    --shadow-elegant: 0 8px 32px hsl(0, 45%, 35% / 0.15);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark theme with warm gold accents */
+    --background: 0 8% 8%;
+    --foreground: 45 25% 92%;
+
+    --card: 0 8% 12%;
+    --card-foreground: 45 25% 92%;
+
+    --popover: 0 8% 12%;
+    --popover-foreground: 45 25% 92%;
+
+    --primary: 45 85% 70%;
+    --primary-foreground: 0 8% 8%;
+
+    --secondary: 0 25% 20%;
+    --secondary-foreground: 45 85% 70%;
+
+    --muted: 0 8% 18%;
+    --muted-foreground: 45 15% 65%;
+
+    --accent: 45 90% 60%;
+    --accent-foreground: 0 8% 8%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 45 25% 92%;
+
+    --border: 0 8% 18%;
+    --input: 0 8% 18%;
+    --ring: 45 85% 70%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
